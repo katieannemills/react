@@ -502,7 +502,7 @@ class Grids extends React.Component {
       }[this.state.lattice]
       this.reflink = {
       	'rg09': 'https://sio-argo.ucsd.edu/RG_Climatology.html',
-		'glodap': 'TBD',
+		'glodap': 'https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:0286118',
         'localGPintegral': '/localgp'
       }[this.state.lattice]
       this.state.title = this.chooseTitle(this.state.lattice, this.state.grid)
