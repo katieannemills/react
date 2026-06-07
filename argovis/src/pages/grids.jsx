@@ -1025,9 +1025,9 @@ class Grids extends React.Component {
 									<input className="form-check-input" checked={this.state.subgrid} onChange={this.toggleSubgrid.bind(this)} type="checkbox" id='subgrid'></input>
 									{this.state.lattice !== 'glodap' && this.state.lattice !== 'localGPintegral' &&
 									<label className="form-check-label" htmlFor='subgrid'>Subtract another level or date</label>}
-									{this.state.lattice === 'glodap' && this.state.lattice !== 'localGPintegral' &&
+									{this.state.lattice === 'glodap' &&
 									<label className="form-check-label" htmlFor='subgrid'>Subtract another level</label>}
-                                    {this.state.lattice !== 'glodap' && this.state.lattice === 'localGPintegral' && 
+                                    {this.state.lattice === 'localGPintegral' && 
 									<label className="form-check-label" htmlFor='subgrid'>Subtract another date</label>}
                                 </div>
 
